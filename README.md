@@ -2,6 +2,12 @@
 
 Two people edit one document at the same time. Each person gets a cursor, and the file is saved on the server.
 
+## Live app
+
+Open Pair Room here: https://together-chris-wind-forwarding.trycloudflare.com
+
+Create an account, make a room, and share that room link. The address above stays available while the computer running the server is turned on.
+
 ## Folders
 
 | Folder | What is inside |
