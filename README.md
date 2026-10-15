@@ -4,9 +4,9 @@ Two people edit one document at the same time. Each person gets a cursor, and th
 
 ## Live app
 
-Open Pair Room here: https://together-chris-wind-forwarding.trycloudflare.com
+Open Pair Room here: https://pair-room-production.up.railway.app
 
-Create an account, make a room, and share that room link. The address above stays available while the computer running the server is turned on.
+Create an account, make a room, and share that room link. This address stays online even when your computer is off.
 
 ## Folders
 
@@ -49,6 +49,7 @@ The API listens on http://localhost:8787.
 2. The server checks the login cookie and room membership before accepting the socket.
 3. Yjs merges both streams, including when both people type on the same line.
 4. About twice a second, the server stores a snapshot in SQLite. A refresh loads that snapshot.
+5. Deletes and new text are listed beside the editor with the name of the person who made the change.
 
 Cursors are presence data. They are not written into the saved file.
 
